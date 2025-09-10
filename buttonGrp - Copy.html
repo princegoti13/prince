@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Bootstrap Example</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="D:\SY_WD\bootstrap.min.css">
+</head>
+<body>
+<div class="btn-group-horizontal">
+ <button type="button" class="btn btn-primary">Apple</button>
+ <button type="button" class="btn btn-primary">Samsung</button>
+ <button type="button" class="btn btn-primary">Sony</button>
+ </div>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminary Events | Premium Event Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom gradients */
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        /* Hamburger menu */
+        .hamburger {
+            transition: all 0.3s ease;
+        }
+        .hamburger-active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger-active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ddc35047-5e03-43d6-ba66-e45d56af5cd2.png" alt="Luminary Events logo with abstract geometric design in purple and blue gradient" class="h-10">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 px-3 py-2 font-medium">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 px-3 py-2 font-medium">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-purple-600 px-3 py-2 font-medium">Portfolio</a>
+                    <a href="#suggestions" class="text-gray-700 hover:text-purple-600 px-3 py-2 font-medium">Suggestions</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 px-3 py-2 font-medium">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="hamburger">
+                        <span class="block w-6 h-0.5 bg-gray-700 mb-1.5 transition-all"></span>
+                        <span class="block w-6 h-0.5 bg-gray-700 mb-1.5 transition-all"></span>
+                        <span class="block w-6 h-0.5 bg-gray-700 transition-all"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-purple-600">Home</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-purple-600">Services</a>
+                <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-purple-600">Portfolio</a>
+                <a href="#suggestions" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-purple-600">Suggestions</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-purple-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-32 pb-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div class="animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Creating Unforgettable Events That Inspire</h1>
+                    <p class="text-xl mb-8 text-purple-100">Luminary Events specializes in crafting extraordinary experiences that leave lasting impressions and exceed expectations.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all">Get Started</a>
+                        <a href="#portfolio" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition-all">Our Work</a>
+                    </div>
+                </div>
+                <div class="mt-10 lg:mt-0 animate-fade-in" style="animation-delay: 0.3s;">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f937002b-5f6b-4320-9804-2f4547bca986.png" alt="Elegant corporate event setup with round tables, floral centerpieces, and soft lighting" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-12 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 hover:scale-105 transition-transform">
+                    <div class="text-5xl font-bold text-purple-600 mb-2">850+</div>
+                    <div class="text-gray-600">Events Organized</div>
+                </div>
+                <div class="p-6 hover:scale-105 transition-transform">
+                    <div class="text-5xl font-bold text-purple-600 mb-2">98%</div>
+                    <div class="text-gray-600">Client Satisfaction</div>
+                </div>
+                <div class="p-6 hover:scale-105 transition-transform">
+                    <div class="text-5xl font-bold text-purple-600 mb-2">150+</div>
+                    <div class="text-gray-600">Trusted Partners</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Comprehensive Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From intimate gatherings to grand celebrations, we handle every detail with precision and creativity</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-glass-cheers text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Corporate Events</h3>
+                    <p class="text-gray-600 mb-4">Professional conferences, product launches, and corporate parties that reflect your brand's excellence.</p>
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-sm">Planning</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-sm">AV Production</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-sm">Catering</span>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Weddings</h3>
+                    <p class="text-gray-600 mb-4">Bespoke wedding planning to create your dream day with meticulous attention to every romantic detail.</p>
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-sm">Coordination</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-sm">Design</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-sm">Venue</span>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-birthday-cake text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Social Gatherings</h3>
+                    <p class="text-gray-600 mb-4">Memorable birthday parties, anniversaries and social events tailored to your vision and personality.</p>
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-sm">Theming</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-sm">Entertainment</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-sm">Logistics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Event Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover some of our most memorable events and celebrations</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Event 1 -->
+                <div class="relative group overflow-hidden rounded-xl shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3015d85-2895-4104-b1d7-1848c233eea1.png" alt="Fashion show runway with models in designer clothing under dramatic lighting" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-1">Vogue Gala 2023</h3>
+                        <p class="text-purple-200">Fashion Show</p>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="relative group overflow-hidden rounded-xl shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0c4d05b9-f542-4dba-b86e-442796d0153b.png" alt="Outdoor wedding ceremony with floral arch and golden sunset lighting" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-1">Thompson Wedding</h3>
+                        <p class="text-purple-200">Summer Wedding</p>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="relative group overflow-hidden rounded-xl shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/36d9e6a9-fbf3-40bd-880e-0433a3d5b25f.png" alt="High-tech corporate conference with LED walls and interactive displays" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-1">TechXpo Summit</h3>
+                        <p class="text-purple-200">Corporate Conference</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-purple-600 text-purple-600 rounded-lg hover:bg-purple-50 transition-all font-medium">
+                    View All Events <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Trusted by businesses and individuals for creating exceptional experiences</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm relative">
+                    <div class="absolute -top-5 left-6 bg-purple-600 text-white p-3 rounded-full">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="mb-6 text-gray-700 italic">"Luminary Events transformed our annual conference into an unforgettable experience. Their attention to detail and creative approach made our event stand out from previous years."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a23c057d-ef6f-483b-acc7-60b0e6ddce62.png" alt="Professional headshot of Sarah Johnson, Marketing Director with brunette hair" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-medium">Sarah Johnson</h4>
+                            <p class="text-purple-600 text-sm">Marketing Director, TechForward</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm relative">
+                    <div class="absolute -top-5 left-6 bg-purple-600 text-white p-3 rounded-full">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="mb-6 text-gray-700 italic">"Our wedding day was perfect thanks to the Luminary team. They handled everything flawlessly, allowing us to enjoy every moment without any stress."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/51a213f2-bb89-4371-9a2b-953cff154356.png" alt="Portrait of Michael and Jessica Thompson, smiling newlyweds" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-medium">Michael & Jessica</h4>
+                            <p class="text-purple-600 text-sm">Newlyweds</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm relative">
+                    <div class="absolute -top-5 left-6 bg-purple-600 text-white p-3 rounded-full">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="mb-6 text-gray-700 italic">"The product launch exceeded all expectations. The team's innovative ideas and seamless execution helped us make a huge impact in our market."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/184fc346-c963-4a1a-bad6-d0aa38c479a3.png" alt="Professional headshot of David Chen, CEO with glasses" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-medium">David Chen</h4>
+                            <p class="text-purple-600 text-sm">CEO, Nova Innovations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggestions Section -->
+    <section id="suggestions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Share Your Event Ideas</h2>
+                    <p class="text-xl text-gray-600 mb-8">We value your input and creativity. Share your suggestions for events you'd love to see, improvements we could make, or themes you're dreaming about.</p>
+                    <div class="flex items-center mb-6">
+                        <div class="bg-purple-100 rounded-full p-3 mr-4">
+                            <i class="fas fa-lightbulb text-purple-600 text-xl"></i>
+                        </div>
+                        <p class="text-gray-700">Your ideas help us innovate and create even better experiences for all our clients.</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-purple-100 rounded-full p-3 mr-4">
+                            <i class="fas fa-heart text-purple-600 text-xl"></i>
+                        </div>
+                        <p class="text-gray-700">We carefully review every suggestion and often implement the best ideas in our events.</p>
+                    </div>
+                </div>
+                
+                <!-- Suggestion Form -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">Submit Your Suggestion</h3>
+                    <form id="suggestionForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="event-type" class="block text-sm font-medium text-gray-700 mb-1">Event Type</label>
+                            <select id="event-type" name="event-type" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                                <option value="">Select an event type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="corporate">Corporate</option>
+                                <option value="social">Social</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="suggestion" class="block text-sm font-medium text-gray-700 mb-1">Your Suggestion</label>
+                            <textarea id="suggestion" name="suggestion" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" required></textarea>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="subscribe" name="subscribe" class="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded">
+                            <label for="subscribe" class="ml-2 block text-sm text-gray-700">Notify me about similar events</label>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors font-medium">
+                            Submit Suggestion
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Create Something Extraordinary?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Let's discuss your vision and start planning an event that will be remembered for years to come.</p>
+            <a href="#contact" class="inline-block bg-white text-purple-700 px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Contact Us</h2>
+                    <p class="text-xl text-gray-600 mb-8">Have questions or ready to start planning your event? Reach out to our team—we'd love to hear from you.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-map-marker-alt text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 mb-1">Our Office</h4>
+                                <p class="text-gray-600">123 Event Plaza, Suite 500<br>Metropolis, MY 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-phone text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 mb-1">Call Us</h4>
+                                <p class="text-gray-600">+1 (555) 123-4567<br>Mon-Fri, 9am-6pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 mb-1">Email Us</h4>
+                                <p class="text-gray-600">hello@luminar-events.com<br>We respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="contact-name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="contact-name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="contact-email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="contact-phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" id="contact-phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="contact-event" class="block text-sm font-medium text-gray-700 mb-1">Event Type</label>
+                            <select id="contact-event" name="event-type" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                                <option value="">Select an event type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="corporate">Corporate</option>
+                                <option value="social">Social</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="contact-message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                            <textarea id="contact-message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors font-medium">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Stay Updated</h2>
+            <p class="text-xl text-gray-600 mb-8">Subscribe to our newsletter for event inspiration, planning tips, and special offers.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                <button type="submit" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-medium">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dbafa23d-73ea-4797-9ea2-63368afa256c.png" alt="Luminary Events logo in white" class="h-10 mb-6">
+                    <p class="text-gray-400 mb-6">Creating extraordinary events that inspire and delight through innovative design and flawless execution.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="#suggestions" class="text-gray-400 hover:text-white transition-colors">Suggestions</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Corporate Events</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Wedding Planning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Social Events</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Event Production</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Venue Sourcing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <address class="not-italic">
+                        <p class="text-gray-400 mb-3">123 Event Plaza, Suite 500<br>Metropolis, MY 12345</p>
+                        <p class="text-gray-400 mb-3">Phone: +1 (555) 123-4567</p>
+                        <p class="text-gray-400 mb-3">Email: hello@luminar-events.com</p>
+                        <p class="text-gray-400">Hours: Mon-Fri, 9am-6pm</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Luminary Events. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('hamburger-active');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuToggle.classList.remove('hamburger-active');
+            });
+        });
+        
+        // Form submission handling
+        const suggestionForm = document.getElementById('suggestionForm');
+        const contactForm = document.getElementById('contactForm');
+        
+        if (suggestionForm) {
+            suggestionForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const formData = new FormData(suggestionForm);
+                
+                // Here you would normally send the data to a server
+                console.log('Suggestion submitted:', Object.fromEntries(formData));
+                
+                // Show success message
+                alert('Thank you for your suggestion! We appreciate your input.');
+                suggestionForm.reset();
+            });
+        }
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const formData = new FormData(contactForm);
+                
+                // Here you would normally send the data to a server
+                console.log('Contact form submitted:', Object.fromEntries(formData));
+                
+                // Show success message
+                alert('Thank you for your message! We will get back to you shortly.');
+                contactForm.reset();
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-fade-in');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Run on initial load
+        animateOnScroll();
+        
+        // Run on scroll
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>
+
